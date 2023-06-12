@@ -1,10 +1,10 @@
 # similarity-controllable-paraphrase-generation
 
 
-hugging face model -> https://huggingface.co/Ogamon/scpg_model
-hugging face ver2 model -> https://huggingface.co/Ogamon/scpg_model_ver2
+hugging face model -> https://huggingface.co/Ogamon/scpg_model  
+hugging face ver2 model -> https://huggingface.co/Ogamon/scpg_model_ver2  
 
-dataset -> https://drive.google.com/drive/folders/1V96SiVkgzlW9bn98K3S0q968vfoTOPy7?usp=sharing
+dataset -> https://drive.google.com/drive/folders/1V96SiVkgzlW9bn98K3S0q968vfoTOPy7?usp=sharing  
 
 
 ## how to use
