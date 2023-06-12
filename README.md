@@ -1,4 +1,4 @@
-# similarity-controllable-paraphrase-generation
+# Similarity-Controllable Paraphrase Generation (SCPG)
 
 
 hugging face model -> https://huggingface.co/Ogamon/scpg_model  
