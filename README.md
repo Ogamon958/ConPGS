@@ -1,10 +1,11 @@
 # Similarity-Controllable Paraphrase Generation (SCPG)
 
 
-hugging face model -> https://huggingface.co/Ogamon/scpg_model  
-hugging face ver2 model -> https://huggingface.co/Ogamon/scpg_model_ver2  
+SCPG model (used in the paper) -> https://huggingface.co/Ogamon/scpg_model  
+SCPG ver2 model (Error Corrected Version) -> https://huggingface.co/Ogamon/scpg_model_ver2  
 
 dataset -> https://drive.google.com/drive/folders/1V96SiVkgzlW9bn98K3S0q968vfoTOPy7?usp=sharing  
+(Constructing a paraphrase corpora from wiki40b with SCPG model.
 
 
 ## how to use
