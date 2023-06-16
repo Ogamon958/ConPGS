@@ -11,6 +11,7 @@ Paraphrase Corpora -> https://drive.google.com/drive/folders/1V96SiVkgzlW9bn98K3
 ## How to use
 
 ```
+#setup
 import torch
 from transformers import BartTokenizer, BartForConditionalGeneration, BartConfig
 model = BartForConditionalGeneration.from_pretrained('Ogamon/scpg_model')
@@ -21,23 +22,31 @@ model.to(device)
 #tags
 sim_token = {70:"<SIM70>", 75:"<SIM75>",80:"<SIM80>",85:"<SIM85>",90:"<SIM90>",95:"<SIM95>"}
 bleu_token={5:"<BLEU0_5>",10:"<BLEU10>",15:"<BLEU15>",20:"<BLEU20>",25:"<BLEU25>",30:"<BLEU30>",35:"<BLEU35>",40:"<BLEU40>"}
+
+#tags
+sim_token = {70:"<SIM70>", 75:"<SIM75>",80:"<SIM80>",85:"<SIM85>",90:"<SIM90>",95:"<SIM95>"}
+bleu_token={5:"<BLEU0_5>",10:"<BLEU10>",15:"<BLEU15>",20:"<BLEU20>",25:"<BLEU25>",30:"<BLEU30>",35:"<BLEU35>",40:"<BLEU40>"}
 ```
 
 
 ```
 #edit here
-text = "I usually play video games for two hours."
-sim = sim_token[70] #70,75,80,85,90,95
+text = "The tiger sanctuary has been told their 147 cats must be handed over."
+sim = sim_token[95] #70,75,80,85,90,95
 bleu = bleu_token[5] #5,10,15,20,25,30,35,40 
 
 
 #evaluate
-input_text=f"{sim} {bleu} {text}"  
-inputs = tokenizer.encode(text, return_tensors="pt",truncation=True).to(device)
-
 model.eval()
 with torch.no_grad():
-    summary_ids = model.generate(inputs,max_new_tokens=128,num_beams=5) 
+    input_text=f"{sim} {bleu} {text}"  
+    inputs = tokenizer.encode(input_text, return_tensors="pt",truncation=True).to(device)
+    length=inputs.size()[1]
+    max_len=int(length*1.5)
+    min_len=int(length*0.75)       
+    
+    summary_ids = model.generate(inputs,max_length=max_len,min_length=min_len,num_beams=5)
     summary = tokenizer.decode(summary_ids[0],skip_special_tokens=True)
     print(summary)
+    #The tiger sanctuary was told to hand over its 147 cats.
 ```
