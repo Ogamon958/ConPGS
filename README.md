@@ -1,7 +1,7 @@
 # Similarity-Controllable Paraphrase Generation (SCPG)
 
 
-SCPG model (used in the paper) -> https://huggingface.co/Ogamon/scpg_model  
+SCPG model (Used in the paper) -> https://huggingface.co/Ogamon/scpg_model  
 SCPG model ver2 (Error Corrected Version) -> https://huggingface.co/Ogamon/scpg_model_ver2  
 
 Paraphrase Corpora -> https://drive.google.com/drive/folders/1V96SiVkgzlW9bn98K3S0q968vfoTOPy7?usp=sharing  
