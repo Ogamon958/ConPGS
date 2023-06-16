@@ -16,6 +16,7 @@ from transformers import BartTokenizer, BartForConditionalGeneration, BartConfig
 model = BartForConditionalGeneration.from_pretrained('Ogamon/scpg_model')
 tokenizer = BartTokenizer.from_pretrained('Ogamon/scpg_model')
 device= torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+model.to(device)
 
 #tags
 sim_token = {70:"<SIM70>", 75:"<SIM75>",80:"<SIM80>",85:"<SIM85>",90:"<SIM90>",95:"<SIM95>"}
