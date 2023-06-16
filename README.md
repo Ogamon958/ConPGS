@@ -8,7 +8,7 @@ dataset -> https://drive.google.com/drive/folders/1V96SiVkgzlW9bn98K3S0q968vfoTO
 (Constructing a paraphrase corpora from wiki40b with SCPG model.)
 
 
-## how to use
+## How to use
 
 ```
 import torch
