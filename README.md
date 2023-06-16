@@ -19,7 +19,7 @@ device= torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
 #tags
 sim_token = {70:"<SIM70>", 75:"<SIM75>",80:"<SIM80>",85:"<SIM85>",90:"<SIM90>",95:"<SIM95>"}
-bleu_token={05:"<BLEU0_5>",10:"<BLEU10>",15:"<BLEU15>",20:"<BLEU20>",25:"<BLEU25>",30:"<BLEU30>",35:"<BLEU35>",40:"<BLEU40>"}
+bleu_token={5:"<BLEU0_5>",10:"<BLEU10>",15:"<BLEU15>",20:"<BLEU20>",25:"<BLEU25>",30:"<BLEU30>",35:"<BLEU35>",40:"<BLEU40>"}
 ```
 
 
@@ -27,7 +27,7 @@ bleu_token={05:"<BLEU0_5>",10:"<BLEU10>",15:"<BLEU15>",20:"<BLEU20>",25:"<BLEU25
 #edit here
 text = "I usually play video games for two hours."
 sim = sim_token[70] #70,75,80,85,90,95
-bleu = bleu_token[05] #05,10,15,20,25,30,35,40 
+bleu = bleu_token[5] #5,10,15,20,25,30,35,40 
 
 
 #evaluate
