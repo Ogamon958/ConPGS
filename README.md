@@ -17,6 +17,7 @@ model = BartForConditionalGeneration.from_pretrained('Ogamon/scpg_model')
 tokenizer = BartTokenizer.from_pretrained('Ogamon/scpg_model')
 device= torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
+#tags
 sim_token = {70:"<SIM70>", 75:"<SIM75>",80:"<SIM80>",85:"<SIM85>",90:"<SIM90>",95:"<SIM95>"}
 bleu_token={05:"<BLEU0_5>",10:"<BLEU10>",15:"<BLEU15>",20:"<BLEU20>",25:"<BLEU25>",30:"<BLEU30>",35:"<BLEU35>",40:"<BLEU40>"}
 ```
