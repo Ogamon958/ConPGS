@@ -10,7 +10,7 @@ https://drive.google.com/drive/folders/1V96SiVkgzlW9bn98K3S0q968vfoTOPy7?usp=sha
 (Constructing paraphrase corpora from wiki40b with SCPG model)
 
 
-## How to use
+## How to use SCPG mpdel
 
 ```
 #setup
