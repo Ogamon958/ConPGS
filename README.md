@@ -1,10 +1,12 @@
-# Similarity-Controllable Paraphrase Generation (SCPG)
+#Controllable Paraphrase Generation on Semantic and Lexical Similairties
 
-
+##Release Similarity-Controllable Paraphrase Generation (SCPG) model  
 SCPG model (Used in the paper) -> https://huggingface.co/Ogamon/scpg_model  
 SCPG model ver2 (Error Corrected Version) -> https://huggingface.co/Ogamon/scpg_model_ver2  
 
-Paraphrase Corpora -> https://drive.google.com/drive/folders/1V96SiVkgzlW9bn98K3S0q968vfoTOPy7?usp=sharing  
+
+##Paraphrase Corpora  
+https://drive.google.com/drive/folders/1V96SiVkgzlW9bn98K3S0q968vfoTOPy7?usp=sharing  
 (Constructing paraphrase corpora from wiki40b with SCPG model)
 
 
