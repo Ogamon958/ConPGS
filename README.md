@@ -25,8 +25,6 @@ model.to(device)
 sim_token = {70:"<SIM70>", 75:"<SIM75>",80:"<SIM80>",85:"<SIM85>",90:"<SIM90>",95:"<SIM95>"}
 bleu_token={5:"<BLEU0_5>",10:"<BLEU10>",15:"<BLEU15>",20:"<BLEU20>",25:"<BLEU25>",30:"<BLEU30>",35:"<BLEU35>",40:"<BLEU40>"}
 
-```
-
 #edit here
 text = "The tiger sanctuary has been told their 147 cats must be handed over."
 sim = sim_token[95] #70,75,80,85,90,95
