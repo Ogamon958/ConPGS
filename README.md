@@ -1,4 +1,4 @@
-# Controllable Paraphrase Generation on Semantic and Lexical Similairties
+# Controllable Paraphrase Generation on Semantic and Lexical Similarities
 
 ## Release Similarity-Controllable Paraphrase Generation (SCPG) model  
 SCPG model (Used in the paper) -> https://huggingface.co/Ogamon/scpg_model  
