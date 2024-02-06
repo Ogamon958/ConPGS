@@ -1,13 +1,13 @@
 # Controllable Paraphrase Generation for Semantic and Lexical Similarities
 
-## Release Paraphrase Generation model  
-  Paraphrase Generation model -> https://huggingface.co/Ogamon/scpg_model  
-  Paraphrase Generation model (Previous versions) (Using when constructing Paraphrase Corpora) -> https://huggingface.co/Ogamon/scpg_model_previous
+## Release Paraphrase Generation model (cpgs_model) 
+  Paraphrase Generation model -> https://huggingface.co/Ogamon/cpgs_model  
+  Paraphrase Generation model (Previous versions) (Using when constructing Paraphrase Corpora) -> https://huggingface.co/Ogamon/cpgs_model_previous
 
 
 ## Paraphrase Corpora  
 https://drive.google.com/drive/folders/1V96SiVkgzlW9bn98K3S0q968vfoTOPy7?usp=sharing  
-(Constructing paraphrase corpora from wiki40b with SCPG model)
+(Constructing paraphrase corpora from wiki40b with CPGS model)
 
 
 ## How to use our Paraphrase Generation model
@@ -16,8 +16,8 @@ https://drive.google.com/drive/folders/1V96SiVkgzlW9bn98K3S0q968vfoTOPy7?usp=sha
 #setup
 import torch
 from transformers import BartTokenizer, BartForConditionalGeneration, BartConfig
-model = BartForConditionalGeneration.from_pretrained('Ogamon/scpg_model')
-tokenizer = BartTokenizer.from_pretrained('Ogamon/scpg_model')
+model = BartForConditionalGeneration.from_pretrained('Ogamon/cpgs_model')
+tokenizer = BartTokenizer.from_pretrained('Ogamon/cpgs_model')
 device= torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 model.to(device)
 
