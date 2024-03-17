@@ -1,6 +1,6 @@
 # Controllable Paraphrase Generation for Semantic and Lexical Similarities
 
-## *Con*trollable *P*araphrase *G*eneration for Semantic and Lexical *S*imilarities model (conpgs_model) 
+## <u>Con</u>trollable <u>P</u>araphrase <u>G</u>eneration for Semantic and Lexical <u>S</u>imilarities model (conpgs_model) 
 
 https://huggingface.co/Ogamon/conpgs_model  
 
