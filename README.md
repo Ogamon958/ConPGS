@@ -48,3 +48,33 @@ with torch.no_grad():
     print(summary)
     #The tiger sanctuary was told to hand over its 147 cats.
 ```
+
+
+## How to use our Paraphrase Generation model
+
+```
+#setup
+import torch
+from transformers import BartTokenizer, BartForConditionalGeneration, BartConfig
+model = BartForConditionalGeneration.from_pretrained('Ogamon/conpgs_model')
+tokenizer = BartTokenizer.from_pretrained('Ogamon/conpgs_model')
+device= torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+model.to(device)
+
+#tags
+sim_token = {70:"<SIM70>", 75:"<SIM75>",80:"<SIM80>",85:"<SIM85>",90:"<SIM90>",95:"<SIM95>"}
+bleu_token={5:"<BLEU0_5>",10:"<BLEU10>",15:"<BLEU15>",20:"<BLEU20>",25:"<BLEU25>",30:"<BLEU30>",35:"<BLEU35>",40:"<BLEU40>"}
+```
+
+
+## Citation
+Please cite our LREC-COLING2024 paper if you use this repository:
+
+```
+@inproceedings{ogasa-2024-lrec-coling,
+    title = {{Controllable Paraphrase Generation for Semantic and Lexical Similarities}},
+    author = "Ogasa, Yuya  and Kajiwara, Tomoyuki and Arase, Yuki",
+    booktitle = {The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)},
+    year = "2024",
+}
+```
