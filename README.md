@@ -52,7 +52,7 @@ with torch.no_grad():
 
 
 ## Citation
-Please cite our LREC-COLING2024 paper if you use this repository:  
+Please cite our LREC-COLING2024 paper if you use our model or paraphrase corpora:  
 (Details updated after submission.)
 
 ```
