@@ -1,8 +1,8 @@
 # Controllable Paraphrase Generation for Semantic and Lexical Similarities
 
 ## Release Paraphrase Generation model (conpgs_model) 
-  Paraphrase Generation model -> https://huggingface.co/Ogamon/conpgs_model  
-  Paraphrase Generation model (Previous versions) (Using when constructing Paraphrase Corpora) -> https://huggingface.co/Ogamon/conpgs_model_previous
+
+https://huggingface.co/Ogamon/conpgs_model  
 
 
 ## Paraphrase Corpora  
