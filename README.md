@@ -10,7 +10,7 @@ https://drive.google.com/drive/folders/1V96SiVkgzlW9bn98K3S0q968vfoTOPy7?usp=sha
 (Constructing paraphrase corpora from wiki40b with ConPGS model)
 
 
-## How to use our Paraphrase Generation model
+## How to use our model
 
 ```
 #setup
