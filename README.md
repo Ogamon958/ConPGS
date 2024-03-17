@@ -58,7 +58,8 @@ Please cite our LREC-COLING2024 paper if you use this repository:
 @inproceedings{ogasa-2024-lrec-coling,
     title = {{Controllable Paraphrase Generation for Semantic and Lexical Similarities}},
     author = "Ogasa, Yuya  and Kajiwara, Tomoyuki and Arase, Yuki",
-    booktitle = {The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)},
+    booktitle = "The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation",
+    month = may,
     year = "2024",
 }
 ```
