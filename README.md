@@ -11,6 +11,7 @@ https://drive.google.com/drive/folders/1V96SiVkgzlW9bn98K3S0q968vfoTOPy7?usp=sha
 
 
 ## How to use our model
+After installing pytorch and transformer, run sample.ipynb or the following code.
 
 ```
 #setup
