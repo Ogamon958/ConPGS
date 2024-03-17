@@ -50,25 +50,9 @@ with torch.no_grad():
 ```
 
 
-## How to use our Paraphrase Generation model
-
-```
-#setup
-import torch
-from transformers import BartTokenizer, BartForConditionalGeneration, BartConfig
-model = BartForConditionalGeneration.from_pretrained('Ogamon/conpgs_model')
-tokenizer = BartTokenizer.from_pretrained('Ogamon/conpgs_model')
-device= torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-model.to(device)
-
-#tags
-sim_token = {70:"<SIM70>", 75:"<SIM75>",80:"<SIM80>",85:"<SIM85>",90:"<SIM90>",95:"<SIM95>"}
-bleu_token={5:"<BLEU0_5>",10:"<BLEU10>",15:"<BLEU15>",20:"<BLEU20>",25:"<BLEU25>",30:"<BLEU30>",35:"<BLEU35>",40:"<BLEU40>"}
-```
-
-
 ## Citation
-Please cite our LREC-COLING2024 paper if you use this repository:
+Please cite our LREC-COLING2024 paper if you use this repository:  
+(Details updated after submission.)
 
 ```
 @inproceedings{ogasa-2024-lrec-coling,
