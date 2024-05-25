@@ -52,18 +52,28 @@ with torch.no_grad():
 
 
 ## Citation
-Please cite our LREC-COLING2024 paper if you use our model or paraphrase corpora:  
-(Details updated after submission.)
+Please cite [our LREC-COLING2024 paper](https://aclanthology.org/2024.lrec-main.348/) if you use our model or paraphrase corpora:  
+
 
 ```
-@inproceedings{ogasa-2024-lrec-coling,
-    title = {{Controllable Paraphrase Generation for Semantic and Lexical Similarities}},
-    author = "Ogasa, Yuya  and Kajiwara, Tomoyuki and Arase, Yuki",
-    booktitle = "The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation",
+@inproceedings{ogasa-etal-2024-controllable-paraphrase,
+    title = "Controllable Paraphrase Generation for Semantic and Lexical Similarities",
+    author = "Ogasa, Yuya  and
+      Kajiwara, Tomoyuki  and
+      Arase, Yuki",
+    editor = "Calzolari, Nicoletta  and
+      Kan, Min-Yen  and
+      Hoste, Veronique  and
+      Lenci, Alessandro  and
+      Sakti, Sakriani  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
     month = may,
     year = "2024",
     address = "Torino, Italia",
-    publisher = "Association for Computational Linguistics",
-    abstract = "We developed a controllable paraphrase generation model for semantic and lexical similarities using a simple and intuitive mechanism: attaching tags to specify these values at the head of the input sentence. Lexically diverse paraphrases have been long coveted for data augmentation. However, their generation is not straightforward because diversifying surfaces easily degrades semantic similarity. Furthermore, our experiments revealed two critical features in data augmentation by paraphrasing: appropriate similarities of paraphrases are highly downstream task-dependent, and mixing paraphrases of various similarities negatively affects the downstream tasks. These features indicated that the controllability in paraphrase generation is crucial for successful data augmentation. We tackled these challenges by fine-tuning a pre-trained sequence-to-sequence model employing tags that indicate the semantic and lexical similarities of synthetic paraphrases selected carefully based on the similarities. The resultant model could paraphrase an input sentence according to the tags specified. Extensive experiments on data augmentation for contrastive learning and pre-fine-tuning of pretrained masked language models confirmed the effectiveness of the proposed model. We release our paraphrase generation model and a corpus of 87 million diverse paraphrases. (https://github.com/Ogamon958/ConPGS)"
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.348",
+    pages = "3927--3942",
+    abstract = "We developed a controllable paraphrase generation model for semantic and lexical similarities using a simple and intuitive mechanism: attaching tags to specify these values at the head of the input sentence. Lexically diverse paraphrases have been long coveted for data augmentation. However, their generation is not straightforward because diversifying surfaces easily degrades semantic similarity. Furthermore, our experiments revealed two critical features in data augmentation by paraphrasing: appropriate similarities of paraphrases are highly downstream task-dependent, and mixing paraphrases of various similarities negatively affects the downstream tasks. These features indicated that the controllability in paraphrase generation is crucial for successful data augmentation. We tackled these challenges by fine-tuning a pre-trained sequence-to-sequence model employing tags that indicate the semantic and lexical similarities of synthetic paraphrases selected carefully based on the similarities. The resultant model could paraphrase an input sentence according to the tags specified. Extensive experiments on data augmentation for contrastive learning and pre-fine-tuning of pretrained masked language models confirmed the effectiveness of the proposed model. We release our paraphrase generation model and a corpus of 87 million diverse paraphrases. (https://github.com/Ogamon958/ConPGS)",
 }
 ```
