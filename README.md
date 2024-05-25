@@ -1,6 +1,6 @@
 # Controllable Paraphrase Generation for Semantic and Lexical Similarities
 
-It was introduced in [the LREC-COLING 2024 paper: Controllable Paraphrase Generation for Semantic and Lexical Similarities](https://aclanthology.org/2024.lrec-main.348/)
+It was introduced in [the LREC-COLING 2024 paper: Controllable Paraphrase Generation for Semantic and Lexical Similarities](https://aclanthology.org/2024.lrec-main.348/).
 
 ## Model
 **Con**trollable **P**araphrase **G**eneration for Semantic and Lexical **S**imilarities model (**ConPGS model**)    
